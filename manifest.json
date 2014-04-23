@@ -1,0 +1,11 @@
+{
+	"name": "Xplore Frame Be Gone!",
+	"version": "1.0",
+	"description": "Remove the annoying frame in IEEE Xplore PDF view.",
+	"content_scripts": [
+		{ "matches": [ "http://ieeexplore.ieee.org/stamp/*" ],
+		  "js": [ "remove_frame.js" ]
+		}
+	],
+    "manifest_version": 2
+}

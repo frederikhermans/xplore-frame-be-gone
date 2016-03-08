@@ -3,7 +3,8 @@
 	"version": "1.0",
 	"description": "Remove the annoying frame in IEEE Xplore PDF view.",
 	"content_scripts": [
-		{ "matches": [ "http://ieeexplore.ieee.org/stamp/*" ],
+		{ "matches": [ "http://ieeexplore.ieee.org/stamp/*",
+                       "http://ieeexplore.ieee.org.ezproxy.its.uu.se/stamp/*" ],
 		  "js": [ "remove_frame.js" ]
 		}
 	],
